@@ -3,9 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tic Tac Toe App</title>
   </head>
   <body>
+    <!-- Player Turn Container -->
+    <div id="player-turn"></div>
+    <!-- Board Container -->
+    <div id="board">
+      <!-- Thought about using a table, decided against it
+        Citation: https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics-->
+      <div class="row">
+        <div row-data="0" col-data="0"></div>
+        <div row-data="0" col-data="1"></div>
+        <div row-data="0" col-data="2"></div>
+      </div>
+      <div class="row">
+        <div row-data="1" col-data="0"></div>
+        <div row-data="1" col-data="1"></div>
+        <div row-data="1" col-data="2"></div>
+      </div>
+      <div class="row">
+        <div row-data="2" col-data="0"></div>
+        <div row-data="2" col-data="1"></div>
+        <div row-data="2" col-data="2"></div>
+      </div>
+    </div>
+    <!-- Result of Game Container -->
+    <div id="results"></div>
+    <!-- Restart Button -->
+    <button id="restart button">Reset Board</button>
     <script src="main.js"></script>
   </body>
 </html>
