@@ -8,7 +8,7 @@ let currentPlayer_h1 = document.getElementById("player-turn");
 let results_div = document.getElementById("results");
 
 // Set Player Turns
-const markCell = (e) => {
+const checkCell = (e) => {
     let cell = e.target;
     let currentTurn = playerTurn == player1 ? player1 : player2
     // Draw X or O to board each turn 
