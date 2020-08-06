@@ -86,3 +86,10 @@ cell_divs.forEach((cell) =>{
 const resetGame = () => {
     location.reload();
 }
+
+// Inspiration/References
+// https://www.bitdegree.org/learn/javascript-refresh-page
+// https://mitchum.blog/games/tic-tac-toe/tic-tac-toe.js
+// https://www.youtube.com/watch?v=8ydbOq_6NrI
+// https://www.youtube.com/watch?v=Y-GkMjUZsmM
+// https://www.w3schools.com/csS/css3_buttons.asp
