@@ -1,8 +1,24 @@
-// Set Player Turns
+// Cached Variables
+let gameOver = false
+let player1 = "X";
+let player2 = "O";
+let playerTurn;
+let cell_divs = document.querySelectorAll(".cell")
+let currentPlayer_h1 = document.getElementById("player-turn");
+let results_div = document.getElementById("results");
 
-// Draw X or O to board each turn 
+// Set Player Turns
+const markCell = (e) => {
+    let cell = e.target;
+    let currentTurn = playerTurn == player1 ? player1 : player2
+    // Draw X or O to board each turn 
+}
 
 // Track Rows and Columns
+cell_divs.forEach((cell) =>{
+    cell.addEventListener("click", markCell, {once: true});
+});
+
 
 // Check Rows and Columns for Matches
 

@@ -8,25 +8,25 @@
   </head>
   <body>
     <!-- Player Turn Container -->
-    <div id="player-turn"></div>
+    <h1 id="player-turn">Current Player!</h1>
     <!-- Board Container -->
     <div id="board">
       <!-- Thought about using a table, decided against it
         Citation: https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics-->
       <div class="row">
-        <div row-data="0" col-data="0"></div>
-        <div row-data="0" col-data="1"></div>
-        <div row-data="0" col-data="2"></div>
+        <div row-data="0" col-data="0" class="cell"></div>
+        <div row-data="0" col-data="1" class="cell-marked">O</div>
+        <div row-data="0" col-data="2" class="cell-marked">X</div>
       </div>
       <div class="row">
-        <div row-data="1" col-data="0"></div>
-        <div row-data="1" col-data="1"></div>
-        <div row-data="1" col-data="2"></div>
+        <div row-data="1" col-data="0" class="cell"></div>
+        <div row-data="1" col-data="1" class="cell"></div>
+        <div row-data="1" col-data="2" class="cell"></div>
       </div>
       <div class="row">
-        <div row-data="2" col-data="0"></div>
-        <div row-data="2" col-data="1"></div>
-        <div row-data="2" col-data="2"></div>
+        <div row-data="2" col-data="0" class="cell"></div>
+        <div row-data="2" col-data="1" class="cell"></div>
+        <div row-data="2" col-data="2" class="cell"></div>
       </div>
     </div>
     <!-- Result of Game Container -->
