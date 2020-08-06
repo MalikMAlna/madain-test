@@ -8,31 +8,31 @@
   </head>
   <body>
     <!-- Player Turn Container -->
-    <h1 id="player-turn">Current Player!</h1>
+    <h1 id="player-turn">Player 1's Turn</h1>
     <!-- Board Container -->
     <div id="board">
       <!-- Thought about using a table, decided against it
         Citation: https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics-->
       <div class="row">
-        <div row-data="0" col-data="0" class="cell"></div>
-        <div row-data="0" col-data="1" class="cell-marked">O</div>
-        <div row-data="0" col-data="2" class="cell-marked">X</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
       </div>
       <div class="row">
-        <div row-data="1" col-data="0" class="cell"></div>
-        <div row-data="1" col-data="1" class="cell"></div>
-        <div row-data="1" col-data="2" class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
       </div>
       <div class="row">
-        <div row-data="2" col-data="0" class="cell"></div>
-        <div row-data="2" col-data="1" class="cell"></div>
-        <div row-data="2" col-data="2" class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
       </div>
     </div>
     <!-- Result of Game Container -->
     <div id="results"></div>
     <!-- Restart Button -->
-    <button id="restart">Reset Board</button>
+    <button id="restart" onclick="resetGame()">Reset Board</button>
     <script src="main.js"></script>
   </body>
 </html>
