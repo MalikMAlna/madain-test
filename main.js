@@ -10,6 +10,7 @@ let results_div = document.getElementById("results");
 
 // Draw Mark Functionality
 const drawMark = (cell, currentTurn) => {
+    // Change Turns
     if(currentTurn === player1) {
     cell.innerHTML = currentTurn;
     playerTurn = player2;
@@ -25,7 +26,6 @@ const checkCell = (e) => {
     let currentTurn = playerTurn;
     // Draw X or O to board each turn 
     drawMark(cell, currentTurn);
-    // Change Turns
     // Check Rows and Columns for Matches
     // Set Row, Column, and Diagonal Victory Conditions
 }
