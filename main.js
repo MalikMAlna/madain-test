@@ -16,7 +16,7 @@ const checkCell = (e) => {
 
 // Track Rows and Columns
 cell_divs.forEach((cell) =>{
-    cell.addEventListener("click", markCell, {once: true});
+    cell.addEventListener("click", checkCell, {once: true});
 });
 
 
