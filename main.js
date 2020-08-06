@@ -1,9 +1,10 @@
 // Cached Variables
 let gameOver;
+let draw;
 let player1 = "X";
 let player2 = "O";
 let playerTurn = player1;
-let cell_divs = document.querySelectorAll(".cell")
+let cell_divs = document.querySelectorAll(".cell"); 
 let currentPlayer_h1 = document.getElementById("player-turn");
 let results_div = document.getElementById("results");
 
@@ -54,7 +55,10 @@ const checkCell = (e) => {
     drawMark(cell, currentTurn);
     // Check Rows and Columns for Matches
     if(checkForWin(currentTurn)) {
-        gameOver = false;
+        results_div.innerHTML = `${currentTurn} wins!`
+        gameOver = true;
+    } else if(isDraw()) {
+        results_div.innerHTML = "DRAW!";
     }
 }
 
@@ -66,11 +70,16 @@ const checkForWin = (currentTurn) => {
  });
 }
 
+const isDraw = () => {
+    return [...cell_divs].every(idx =>{
+        return idx.classList.contains("cell-marked");
+    });
+}
+
 // Track Rows and Columns
 cell_divs.forEach((cell) =>{
     cell.addEventListener("click", checkCell, {once: true});
 });
-
 
 
 // Reset Game Board, regardless of victory conditions

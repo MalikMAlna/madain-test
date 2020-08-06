@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-.cell {
+.row > .cell {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 90px;
   height: 100px;
   width: 100px;
@@ -43,6 +43,13 @@
   width: 100%;
 }
 
+#results {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
 #restart {
   background-color: indigo;
   border: none;
@@ -54,7 +61,7 @@
   display: block;
   font-size: 14px;
   margin-top: 10px;
-  margin-left: 46.5%;
+  margin-left: 43%;
   cursor: pointer;
 }
 
